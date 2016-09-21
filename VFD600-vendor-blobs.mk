@@ -11,5 +11,3 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Vodafone/VFD600/pro
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Vodafone/VFD600/proprietary/priv-app,system/priv-app)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Vodafone/VFD600/proprietary/vendor,system/vendor)
-
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Vodafone/VFD600/proprietary/vendor/lib/libtime_genoff.so,obj/lib/libtime_genoff.so)
