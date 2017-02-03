@@ -28,3 +28,16 @@ LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
 endif
+#Yes, this is needed because of the model of the device (VFD600)
+ifeq ($(TARGET_DEVICE),VFD600)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libtime_genoff
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libtime_genoff.so
+LOCAL_MULTILIB := 32
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+endif
